@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Available Items</title>
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/carousel.css" />
+</head>
+
+<body>
+  <div class="row">
+    <div class="category-div">
+      <button id='category-btn'>
+        <em class="fa fa-bars"></em>
+        Categories
+      </button>
+      <div class="row">
+        <div id="filter-div">
+          <div class="category-input">
+            <input type="checkbox" class="category-check" id='Puppy' value="Puppy"> <label for='Puppy'>Puppies</label>
+          </div>
+          <div class="category-input">
+            <input type="checkbox" class="category-check" id='Kitten' value="Kitten"> <label
+              for='Kitten'>Kittens</label>
+          </div>
+          <div class="category-input">
+            <input type="checkbox" class="category-check" id='Rabbit' value="Rabbit"> <label
+              for='Rabbit'>Rabbits</label>
+          </div>
+          <div class="category-input">
+            <button id='apply-filters'>Apply Filters</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="item-carousel">
+    <div id="item-left">
+      <div class="item-info" id="item-left-info"></div>
+    </div>
+    <button id="slide-left" class="slide-btns">
+      <em class="fa fa-chevron-left" aria-hidden="true"></em>
+    </button>
+    <div id="item-current">
+      <div class="item-info" id="item-current-info"></div>
+    </div>
+    <div id="item-right">
+      <div class="item-info" id="item-right-info"></div>
+    </div>
+    <button id="slide-right" class="slide-btns">
+      <em class="fa fa-chevron-right" aria-hidden="true"></em>
+    </button>
+  </div>
+</body>
+<script src="./js/carousel.js"></script>
+
+</html>
